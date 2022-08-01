@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Frontend Mentor | NFT preview card component</title>
+<script>
+  tailwind.config={
+    theme:{
+      fontFamily:{
+              sans:['Outfit','sans-serif'],
+              
+            },
+      extend:{
+              colors:{
+                softBlue:'hsl(215, 51%, 70%)',
+                cyan:'hsl(178, 100%, 50%)',
+                blueBg:'hsl(217, 54%, 11%)',
+                darkBlue:'hsl(216, 50%, 16%)',
+                blueLine:'hsl(215, 32%, 27%)',
+                cardmainBg:'hsl(216,57%,11%)'
+              },
+            }
+    }
+  }
+</script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- main container -->
+  <div class="flex items-center justify-center min-h-screen bg-blueBg text-white ">
+    <!-- desktop extra bg -->
+      <div class="bg-cardmainBg p-3">
+        <div class="flex flex-col items-center p-4 bg-darkBlue rounded-lg w-72 space-y-4">
+          <div>
+            <img src="images/image-equilibrium.jpg" class="rounded-lg w-64" alt="">
+          </div>
+          <div class="text-left space-y-4 ">
+            <h2 class="text-white font-bold text-2xl">Equilibrium #3429</h2>
+            <p class="font-base font-light text-softBlue">Our Equilibrium collection promotes balance and calm.</p>
+            <div class="flex items-center justify-between ">
+              <div class="flex items-center  space-x-2">
+                <img src="images/icon-ethereum.svg" width="w-6" alt="">
+                <p class="text-cyan">0.041ETH</p>
+              </div>
+              <div class="flex items-center  space-x-2">
+                <img src="images/icon-clock.svg"  alt="">
+                <p class="font-base text-softBlue">3 days left</p>
+              </div>
+            </div>
+            <div class="border-b-2 border-b-blueLine"></div>
+            <div class="flex items-center   space-x-3 ">
+              <img src="images/image-avatar.png" class="w-8" alt="">
+              <p class="text-base font-light text-white"><span class="text-softBlue">Creation of</span> Jules Wyren</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
